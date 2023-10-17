@@ -1,20 +1,6 @@
-<script>
-	import { API } from './api.js';
-
-	let restaurantPromise = loadRestaurants();
-	async function loadRestaurants() {
-		let restaurants = await API.getAllRestaurants();
-		return restaurants;
-	}
-</script>
-
-{#await restaurantPromise}
-	Loading restaurants
-{:then restaurants}
-	{#each restaurants as restaurant}
-		{restaurant.name}
-		<br />
-	{/each}
-{:catch error}
-	{error}
-{/await}
+<h1>hello</h1>
+<p>welcome to my corner of the internet</p>
+<p>
+	no part of this website is final, nor will it ever be. my goal for this place is to always be
+	changing and updating with new content.
+</p>
