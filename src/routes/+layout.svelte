@@ -1,14 +1,18 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div id="app">
 	<nav>
-		<a href="/">home</a>
-		<a href="/anime/" class="not-implemented">anime</a>
-		<a href="/books/" class="not-implemented">books</a>
-		<a href="/games/" class="not-implemented">games</a>
-		<a href="/movies/" class="not-implemented">movies</a>
-		<a href="/music/" class="not-implemented">music</a>
-		<a href="/photos/" class="not-implemented">photos</a>
-		<a href="/restaurants/">restaurants</a>
-		<a href="/websites/" class="not-implemented">websites</a>
+		<a href={base + '/'}>home</a>
+		<a href={base + '/anime'} class="not-implemented">anime</a>
+		<a href={base + '/books'} class="not-implemented">books</a>
+		<a href={base + '/games'} class="not-implemented">games</a>
+		<a href={base + '/movies'} class="not-implemented">movies</a>
+		<a href={base + '/music'} class="not-implemented">music</a>
+		<a href={base + '/photos'} class="not-implemented">photos</a>
+		<a href={base + '/restaurants'}>restaurants</a>
+		<a href={base + '/websites'} class="not-implemented">websites</a>
 	</nav>
 
 	<slot />
