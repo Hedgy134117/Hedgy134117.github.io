@@ -1,6 +1,5 @@
 <div>
-	<a href="./">hello</a>
-	<a href="./">goodbye</a>
+	<slot />
 </div>
 
 <style>
@@ -11,7 +10,7 @@
 		border-bottom: 1px solid var(--accent-color);
 	}
 
-	div a {
+	:global(a) {
 		margin-right: 0.5em;
 	}
 </style>

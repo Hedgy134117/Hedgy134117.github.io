@@ -11,7 +11,7 @@
 		<a href={base + '/movies'} class="not-implemented">movies</a>
 		<a href={base + '/music'} class="not-implemented">music</a>
 		<a href={base + '/photos'} class="not-implemented">photos</a>
-		<a href={base + '/restaurants'}>restaurants</a>
+		<a href={base + '/restaurants/want-to-go'}>restaurants</a>
 		<a href={base + '/websites'} class="not-implemented">websites</a>
 	</nav>
 

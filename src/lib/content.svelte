@@ -2,7 +2,7 @@
 
 <style>
 	:global(div.container) {
-		overflow-y: auto;
+		overflow: auto;
 		padding: var(--body-padding);
 		/* border: 1px solid var(--accent-color); */
 	}
