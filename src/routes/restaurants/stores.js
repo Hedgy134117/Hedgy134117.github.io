@@ -8,6 +8,8 @@ export function createRestaurantsStore() {
         subscribe,
         init: async (favorites) => {
             API.getAllRestaurants(favorites).then(data => {
+                data = data.sort((a, b) => a.name.localeCompare(b.name));
+                console.log(data);
                 set(data);
             });
         }
